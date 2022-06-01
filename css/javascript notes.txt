@@ -1,0 +1,2 @@
+brandon Eich created javascript in 1995
+it was created in 10days originally called livescript
