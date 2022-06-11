@@ -524,6 +524,8 @@ input[type="submit"]:hover{
 .subheader h1{
     margin-top: 100px;
 }
+
+
 .about-us{
     width: 80%;
     margin: auto;
@@ -551,4 +553,110 @@ input[type="submit"]:hover{
 
 .red-btn:hover{
     color: #fff;
+}
+
+/*---------Courses------------*/
+.subheader-courses{
+    height: 50vh;
+    width: 100;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/courses.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subheader-courses h1{
+    margin-top: 100px;
+}
+
+.paid-courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*---login-----*/
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: rgb(252, 251, 251);
+    color:rgb(7, 7, 7);
+    top: 210px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0  0 20px 0px rgba(0,0,0,0.2); ;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+.loginbox h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(10, 10, 10);
+}
+
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+  border: none;
+  border-bottom: 1px solid rgb(8, 8, 8);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(14, 13, 13);
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+  width:70%;
+  height: 50%;
+  font-weight: 700;
+  margin-left: 40px;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(252, 249, 249);
+  border: 1px solid rgb(250, 249, 249);
+  padding: 12px 34px;
+  font-size: 13px;
+  border-radius: 25px;
+  background: #1100f8;
+  position:relative;
+  cursor: pointer;
+}
+
+.loginbox input[type="submit"]:hover{
+  box-shadow: 0  0 20px 0px rgba(0,0,0,0.2); 
+}
+
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
 }
