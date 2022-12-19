@@ -80,6 +80,7 @@ nav img {
 .cta-btn:hover {
   border: 1px solid rgba(39, 102, 236, 0.7);
   background: rgba(39, 102, 236, 0.702);
+  color: #fff;
   transition: 1s;
 }
 nav .fa {
