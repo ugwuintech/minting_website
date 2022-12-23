@@ -41,20 +41,20 @@
 
       <section class="login-form">
          <div class="form">
-            <form class="register-form">
-               <input type="text" placeholder="username"/>
-               <input type="email" placeholder="E-mail"/>
-               <input type="password" placeholder="Password"/>
-               <input type="password" placeholder="Confirm Password"/>
-               <button>Create Account</button>
+            <form class="register-form" name="registerForm" onsubmit = "return(validateReg());">
+               <input type="text" placeholder="username" name="username"/>
+               <input type="email" placeholder="E-mail" name="eMail"/>
+               <input type="password" placeholder="Password" name="password"/>
+               <input type="password" placeholder="Confirm Password" name="confirmPass"/>
+               <button type="submit">Create Account</button>
                <p class="message">Already registered?  <a href="#">Login</a>
                </p>
             </form>
 
-            <form class="login-form">
-               <input type="text" placeholder="username or email"/>
-               <input type="password" placeholder="password"/>
-               <button>Login</button>
+            <form class="login-form" name="loginForm" onsubmit = "return(validateLog());">
+               <input type="text" placeholder="username or email" name="userName"/>
+               <input type="password" placeholder="password" name="passWord"/>
+               <button type="submit">Login</button>
                <p class="message">Not Registered? <a href="#">Create Account</a></p>
             </form>
          </div>
