@@ -35,7 +35,7 @@ function validateLog() {
     dotpos = emailID.lastIndexOf(".");
 
     if (atpos < 1 || dotpos - atpos < 2) {
-      alert("Please enter a correct email address");
+      alert("Invalid username/email");
       document.registerForm.eMail.focus();
       return false;
     }
