@@ -16,11 +16,19 @@
 nav {
   display: flex;
   padding: 2% 6%;
+  padding-bottom: 0;
   justify-content: space-between;
   align-items: center;
 }
+.sticky-header {
+  position: fixed;
+  z-index: 2;
+  width: 90%;
+  top: 0px;
+  backdrop-filter: blur(15px);
+}
 nav img {
-  width: 150px;
+  width: 80px;
 }
 .nav-links {
   flex: 1;
@@ -433,7 +441,7 @@ input[type="submit"]:hover {
   bottom: 0;
   right: 0;
   background: black;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,7 +519,9 @@ input[type="submit"]:hover {
 /*------About Us-------*/
 .subheader {
   height: 50vh;
-  width: 100;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(../img/mainabout.jpg);
   background-position: center;
@@ -556,6 +566,8 @@ input[type="submit"]:hover {
 .subheader-courses {
   height: 50vh;
   width: 100;
+  position: relative;
+  overflow: hidden;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(../img/courses.png);
   background-position: center;
