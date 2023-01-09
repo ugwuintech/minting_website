@@ -192,29 +192,29 @@ const eyeicon3 = document.getElementById("eyeicon3");
 eyeicon.onclick = function () {
   if (password.type == "password") {
     password.type = "text";
-    eyeicon.src = "./img/hidepassword.png";
+    eyeicon.src = "./img/viewpassword.png";
   } else {
     password.type = "password";
-    eyeicon.src = "./img/viewpassword.png";
+    eyeicon.src = "./img/hidepassword.png";
   }
 };
 
 eyeicon2.onclick = function () {
   if (password2.type == "password") {
     password2.type = "text";
-    eyeicon2.src = "./img/hidepassword.png";
+    eyeicon2.src = "./img/viewpassword.png";
   } else {
     password2.type = "password";
-    eyeicon2.src = "./img/viewpassword.png";
+    eyeicon2.src = "./img/hidepassword.png";
   }
 };
 
 eyeicon3.onclick = function () {
   if (passWord.type == "password") {
     passWord.type = "text";
-    eyeicon3.src = "./img/hidepassword.png";
+    eyeicon3.src = "./img/viewpassword.png";
   } else {
     passWord.type = "password";
-    eyeicon3.src = "./img/viewpassword.png";
+    eyeicon3.src = "./img/hidepassword.png";
   }
 };
