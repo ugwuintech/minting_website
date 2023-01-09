@@ -92,9 +92,9 @@ setTimeout(() => {
 //   }
 //   return true;
 // }
+//-------------------------------------------------------------------------------------------------------------
 
 //  FORM VALIDATION (REG FORM)
-
 const registerform = document.getElementById("registerform");
 const loginform = document.getElementById("loginform");
 const username = document.getElementById("username");
@@ -183,3 +183,38 @@ function isEmail(email) {
     email
   );
 }
+
+// UNHIDE PASSWORD
+const eyeicon = document.getElementById("eyeicon");
+const eyeicon2 = document.getElementById("eyeicon2");
+const eyeicon3 = document.getElementById("eyeicon3");
+
+eyeicon.onclick = function () {
+  if (password.type == "password") {
+    password.type = "text";
+    eyeicon.src = "./img/hidepassword.png";
+  } else {
+    password.type = "password";
+    eyeicon.src = "./img/viewpassword.png";
+  }
+};
+
+eyeicon2.onclick = function () {
+  if (password2.type == "password") {
+    password2.type = "text";
+    eyeicon2.src = "./img/hidepassword.png";
+  } else {
+    password2.type = "password";
+    eyeicon2.src = "./img/viewpassword.png";
+  }
+};
+
+eyeicon3.onclick = function () {
+  if (passWord.type == "password") {
+    passWord.type = "text";
+    eyeicon3.src = "./img/hidepassword.png";
+  } else {
+    passWord.type = "password";
+    eyeicon3.src = "./img/viewpassword.png";
+  }
+};

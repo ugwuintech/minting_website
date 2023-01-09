@@ -76,6 +76,13 @@ p {
   top: 20px;
   right: 20px;
 }
+.form-control img {
+  cursor: pointer;
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+}
 
 .form-control small {
   color: #e74c3c;
@@ -97,6 +104,11 @@ p {
 
 .form-control.error small {
   visibility: visible;
+}
+.hide-password {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 .form button {
   font-family: "Montserrat", sans-serif;

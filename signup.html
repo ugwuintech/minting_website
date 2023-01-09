@@ -68,6 +68,7 @@
               <input type="password" placeholder="Password" id="password" />
               <i class="fa-solid fa-circle-exclamation"></i>
               <i class="fa-solid fa-circle-check"></i>
+              <img src="./img/viewpassword.png" id="eyeicon" alt="" />
               <small>Error message</small>
             </div>
             <div class="form-control">
@@ -78,6 +79,7 @@
               />
               <i class="fa-solid fa-circle-exclamation"></i>
               <i class="fa-solid fa-circle-check"></i>
+              <img src="./img/viewpassword.png" id="eyeicon2" alt="" />
               <small>Error message</small>
             </div>
             <button>Create Account</button>
@@ -96,6 +98,7 @@
                 class="fa-solid fa-circle-exclamation"
               ></i>
               <i class="fa-solid fa-circle-check"></i>
+              <img src="./img/viewpassword.png" id="eyeicon3" alt="" />
               <small>Error message</small>
             </div>
             <button>Login</button>
@@ -127,6 +130,10 @@
       $(".message a").click(function () {
         $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
       });
+      // const passwordIcon = `<img src="./img/viewpassword.png" id ="eyeicon" alt="" />`;
+      // $("#password").on("focus", function (e) {
+      //   $("#hidepassword").html(passwordIcon);
+      // });
     </script>
     <script src="js/main.js"></script>
   </body>
