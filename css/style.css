@@ -26,6 +26,15 @@ nav {
   width: 90%;
   top: 0px;
   backdrop-filter: blur(15px);
+  background: rgb(255, 255, 255, 0.45);
+}
+.sticky-header .menu-toggle i {
+  color: #1100f8 !important;
+}
+
+.sticky-header a {
+  font-weight: bolder;
+  color: #000 !important;
 }
 nav img {
   width: 80px;

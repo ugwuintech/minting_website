@@ -104,14 +104,35 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 
+const body = document.querySelector("body");
+
+// STICKY HEADER
+const navBar = document.getElementById("navbar");
+
+document.addEventListener("scroll", (e) => {
+  const pos = window.scrollY;
+  console.log(pos);
+  if (pos > 300) {
+    navBar.classList.add("sticky-header");
+  } else {
+    navBar.classList.remove("sticky-header");
+  }
+});
+console.log(body);
+// $(document).on("scroll", (e) => {
+//   const pos = window.screenY;
+//   console.log(pos);
+// });
+// function stickyHeader()
+
 // REGISTER FORM
-registerform.addEventListener("submit", (e) => {
+registerform?.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
 });
 
-loginform.addEventListener("submit", (e) => {
+loginform?.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
