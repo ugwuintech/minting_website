@@ -1,10 +1,15 @@
 // Toggle Menu
 var navLinks = document.getElementById("navLinks");
 function showMenu() {
-  navLinks.style.right = "0";
+  navLinks.style.display = "block";
+  setTimeout(() => {
+    navLinks.style.right = "0";
+  }, 200);
 }
 function hideMenu() {
-  navLinks.style.right = "-200px";
+  setTimeout(() => {
+    navLinks.style.right = "-200px";
+  }, 800);
 }
 // Preloader
 var preloader = document.getElementById("preloader");
